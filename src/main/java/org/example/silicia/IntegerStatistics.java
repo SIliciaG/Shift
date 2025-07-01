@@ -18,7 +18,7 @@ public class IntegerStatistics implements Statistics {
             if (max == null || val.compareTo(max) > 0) max = val;
             sum = sum.add(val);
         } catch (NumberFormatException ignored) {
-            // Игнорируем некорректные значения (хотя по логике их не будет)
+            // Игнор некорректных значений
         }
     }
 
