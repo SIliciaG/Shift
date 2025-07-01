@@ -187,7 +187,7 @@ public class Main {
                 }
             }
 
-            // Выводим статистику в консоль
+            // Вывод статистики в консоль
             boolean isFullStat = fullStats;
 
             integerStats.print(isFullStat);
