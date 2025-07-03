@@ -74,7 +74,7 @@ public class Main {
                 Path filePath = Paths.get(fileName);
                 if (!Files.exists(filePath)) {
                     System.err.printf("Предупреждение: файл %s не найден, пропускается%n", fileName);
-                    continue; // продолжаем со следующими файлами
+                    continue;
                 }
                 try (BufferedReader br = Files.newBufferedReader(filePath, StandardCharsets.UTF_8)) {
                     String line;
@@ -83,7 +83,7 @@ public class Main {
                     }
                 } catch (IOException e) {
                     System.err.printf("Ошибка чтения файла %s: %s%n", fileName, e.getMessage());
-                    // продолжаем со следующими файлами
+
                 }
             }
 
@@ -187,7 +187,7 @@ public class Main {
                 }
             }
 
-            // Вывод статистики в консоль
+            // Вывод статистики
             boolean isFullStat = fullStats;
 
             integerStats.print(isFullStat);
